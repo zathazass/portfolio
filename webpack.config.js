@@ -38,6 +38,10 @@ module.exports = {
       {
         test: /\.ttf$/i,
         type: "asset/resource",
+      },
+      {
+        test: /\.(pdf|zip)$/i,
+        type: "asset/resource",
       }
     ],
   },

@@ -1,3 +1,7 @@
+import "./assets/zass.png";
+import "./assets/certificates_sathananthan.zip";
+import "./assets/Sathananthan_Resume.pdf";
+
 /*
  * index.scss is the master / main style file.
 */
@@ -30,7 +34,7 @@ window.addEventListener('scroll', () => {
   navbarLinks.forEach (link => {
     link.classList.remove('link-active');
     let linkName = link.dataset.name;
-    console.log(linkName);
+    
     if (linkName === current) {
       link.classList.add('link-active');
     }
