@@ -1,0 +1,81 @@
+.skill {
+  background-color: $color-dominant;
+}
+
+.skill_title-complement {
+  color: $color-complement;
+}
+
+.skill__title {
+  color: $color-white;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  margin: 2rem 0;
+}
+
+.skill__showcase {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  max-width: 80%;
+
+  @include md {
+    max-width: 100%;
+  }
+}
+
+.showcase_tech {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  color: $color-complement_2;
+}
+
+.showcase_tech__name, .showcase_tech__percent {
+  font-size: .9rem;
+}
+
+.showcase_percent__bar {
+  margin-bottom: 1.5rem;
+  height: .5rem;
+  background-color: hsl(45, 80%, 90%);
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    height: 100%;
+    background-color: $color-complement_2;
+  }
+
+  &.html5::before {
+    width: 85%;
+  }
+  &.css3::before {
+    width: 70%;
+  }
+  &.js::before {
+    width: 45%;
+  }
+  &.python3::before {
+    width: 65%;
+  }
+  &.django::before {
+    width: 50%;
+  }
+  &.communication::before {
+    width: 70%;
+  }
+  &.creativity::before {
+    width: 60%;
+  }
+  &.projmgmt::before {
+    width: 30%;
+  }
+  &.teamwork::before {
+    width: 50%;
+  }
+}

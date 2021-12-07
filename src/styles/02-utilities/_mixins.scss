@@ -1,0 +1,19 @@
+@mixin centered ($width: 960px, $topSpace: 0) {
+  max-width: $width;
+  margin: $topSpace auto;
+}
+
+@mixin image ($width: 100%, $fit: cover) {
+  width: $width;
+  object-fit: $fit;
+}
+
+@mixin resetElement {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}

@@ -1,0 +1,42 @@
+// Typography
+$font-base_size: 16px;
+
+$font-heading: open sans;
+$font-paragraph: mukta vaani;
+
+$letter_spacing-small: .5px;
+$letter-spacing-medium: 1px;
+$letter-spacing-large: 2px;
+
+$font_size-h1: 3rem;
+$font_size-h2: 2.5rem;
+$font_size-h3: 2rem;
+$font_size-h4: 1.75rem;
+$font_size-h5: 1.5rem;
+$font_size-h6: 1.25rem;
+$font_size-p: 1rem;
+
+$font-thin: 200;
+$font-normal: 400;
+$font-bold: 600;
+$font-boldest: 800;
+
+$line_height-normal: 1.5;
+$line_height-narrow: 1.2;
+$line_height-wide: 2;
+
+// Layout
+$container-1k: 1024px; // 64 rem (if 1rem = 16px)
+$container-960: 960px;
+$width-container: $container-1k; 
+$width-container_mob: 90%;
+$width-container_tab: 80%;
+$margin-container: 0 auto; 
+
+$height-header: 50px;
+$height-section_min: calc(100vh - $height-header);
+$padding-section: 2em 0;
+
+// z-index
+$z_index-1: 1000;
+$z_index-2: 999; 

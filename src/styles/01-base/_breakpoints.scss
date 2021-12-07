@@ -1,0 +1,44 @@
+/*
+ * Media Breakpoints picked from Bootstrap.
+*/
+
+$xs-size: 575.98px;
+$sm-size: 767.98px;
+$md-size: 991.98px;
+$lg-size: 1199.98px;
+$xl-size: 1200px;
+
+@mixin xs {
+  // Extra small devices (portrait phones, less than 576px)
+  @media (max-width: $xs-size) {
+    @content;
+  }
+}
+
+@mixin sm {
+  // Small devices (landscape phones, 576px and up)
+  @media (max-width: $sm-size) {
+    @content;
+  }
+}
+
+@mixin md {
+  // Medium devices (tablets, 768px and up)
+  @media (max-width: $md-size) { 
+    @content;
+  }
+}
+
+@mixin lg {
+  // Large devices (desktops, 992px and up)
+  @media (max-width: $lg-size) { 
+    @content;
+  }
+}
+
+@mixin xl {
+  // Extra large devices (large desktops, 1200px and up)
+  @media (min-width: $xl-size) { 
+    @content;
+  }
+}

@@ -1,0 +1,105 @@
+header {
+  @extend %position-fixed_top_left;
+  width: 100%;
+  max-height: $height-header;
+  background-color: $color-dominant;
+}
+
+.navbar {
+  max-width: $width-container;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: $height-header;
+
+  @include md {
+    width: $width-container_mob;
+    max-width: $width-container_mob;  
+  }
+
+  @include lg {
+    width: $width-container_tab;
+    max-width: $width-container_tab;
+  }
+
+  &__brand {
+    color: $color-complement;
+    font-size: 1.5rem;
+    font-weight: $font-bold;
+
+    &:hover {opacity: .8;}
+  }
+  &__menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+
+    @include md {
+      display: none;
+      position: fixed;
+        top: $height-header;
+        left: 0;
+      width: 100%;
+      height: $height-section_min;
+      background-color: $color-dominant;
+      flex-direction: column;
+      justify-content: flex-start;
+      overflow: auto;
+      gap: .5rem;
+      padding-top: .5rem;
+
+      &.active {
+        display: flex;
+      }
+    }
+  }
+
+  &__item {
+    line-height: $height-header;
+
+    @include md {
+      line-height: normal;
+    }
+  }
+
+  &__link {
+    display: block;
+    color: $color-accent;
+    letter-spacing: $letter-spacing-medium;
+
+    @include md {
+      padding: 1rem;
+    }
+
+    &:hover {
+      color: $color-complement;
+    }
+
+    &.link-active {
+      color: $color-complement;
+    }
+  }
+
+  &__toggle {
+    display: none;
+
+    @include md {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 1.25rem;
+      height: 1.25rem;
+      background-color: transparent;
+    }
+
+    .bar {
+      height: 2px;
+      background-color: $color-white;
+    }
+
+    .bar-1 {width: 100%;} .bar-2 {width: 60%;} .bar-3 {width: 85%;}
+  }
+}
+

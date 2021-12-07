@@ -1,0 +1,44 @@
+/*
+ * Grid Layout Rulesets
+*/
+
+$grid: 12;
+$gap: .5rem;
+
+.row {
+  display: grid;
+  grid-template-columns: repeat($grid, 1fr);
+  gap: $gap;
+}
+
+@for $i from 1 through 12 {
+  .col-#{$i} {
+    grid-column: span $i;
+
+    @include xs {
+      @at-root .xs-col-#{$i} {
+        grid-column: span $i;
+      }
+    }
+    @include sm {
+      @at-root .sm-col-#{$i} {
+        grid-column: span $i;
+      }
+    }
+    @include md {
+      @at-root .md-col-#{$i} {
+        grid-column: span $i;
+      }
+    }
+    @include lg {
+      @at-root .lg-col-#{$i} {
+        grid-column: span $i;
+      }
+    }
+    @include xl {
+      @at-root .xl-col-#{$i} {
+        grid-column: span $i;
+      }
+    }
+  }
+}

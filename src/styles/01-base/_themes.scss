@@ -1,0 +1,13 @@
+$color-dominant: hsl(270, 50%, 10%);
+$color-complement: hsl(90, 80%, 50%);
+$color-accent: hsl(180, 20%, 90%);
+
+$color-white: hsl(0, 0%, 100%);
+$color-black: hsl(0, 0%, 10%);
+$color-gray: hsl(0, 0%, 60%);
+
+$color-complement_2: hsl(45, 80%, 50%);
+
+body {
+  color: $color-black;
+}

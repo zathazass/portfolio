@@ -1,0 +1,33 @@
+.certificate__list {
+  margin: 0;
+  padding: 2rem;
+  display: flex;
+  gap: 1.5rem;
+  flex-direction: column;
+}
+
+.certificate__list > li {
+  list-style: square;
+  color: $color-black;
+  font-size: 1.1rem;
+
+  i {
+    font-size: .9rem;
+  }
+}
+
+.download_certificates {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.certificate_link {
+  padding: 1rem 1.5rem;
+  color: $color-white;
+  background-color: $color-complement_2;
+  display: inline-block;
+  text-transform: uppercase;
+  line-height: 1.2;
+  margin: 1rem auto;
+}

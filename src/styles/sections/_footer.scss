@@ -1,0 +1,29 @@
+footer {
+  padding: 3rem 0;
+  background-color: $color-dominant;
+}
+
+footer .section__title {
+  color: $color-white;
+}
+
+.contact_details {
+  min-height: 20vh;
+  color: white;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.basic_contact {
+  margin: 1rem 0;
+}
+
+.basic_contact > * {
+  margin: .5rem;
+}
+
+.social_contact {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}

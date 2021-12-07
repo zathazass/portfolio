@@ -1,0 +1,44 @@
+.top_space {
+  margin-top: $height-header;
+}
+
+section {
+  width: 100%;
+  min-height: $height-section_min;
+  overflow: auto;
+  padding: $padding-section;
+  scroll-snap-type: y mandatory;
+}
+
+
+.section__title {
+  color: $color-dominant;
+  margin: 2rem 0;
+  text-align: center;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+      bottom: -.75rem;
+      left: 50%;
+    transform: translateX(-50%);
+    height: .25rem;
+    width: 15%;
+    background-color: $color-complement_2;
+  }
+}
+
+.container {
+  width: $width-container;
+  max-width: $width-container;
+  margin: $margin-container;
+
+  @include md {
+    max-width: $width-container_mob;
+  }
+
+  @include lg {
+    max-width: $width-container_tab;
+  }
+}

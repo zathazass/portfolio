@@ -1,0 +1,52 @@
+/*
+ * Top plugins are here.
+ * normalize.css is for providing common rules for all browsers.
+*/
+
+@import './00-plugins/normalize.css';
+
+/*
+ * Initial Base Setup After Plugins
+ * Includes Whole project variables, breakpoints, resetting things
+ * typography contains only about text formatting
+ * layouts is the base layout for project also contains various display rulesets
+ * themes is for providing theme to site. It contains its own variables
+*/
+
+@import './01-base/variables';
+@import './01-base/breakpoints';
+@import './01-base/reset';
+@import './01-base/typography';
+@import './01-base/layouts';
+@import './01-base/themes';
+
+/*
+ * Utilities for Components, Elements and Others
+ * extends, functions & mixins are used to keep code DRY
+*/
+
+@import './02-utilities/extends';
+@import './02-utilities/functions';
+@import './02-utilities/mixins';
+
+/*
+ * Components for any project. It should be common
+*/
+
+@import './03-components/icons';
+
+/*
+ * Sections contains every single section styling in the page.
+ * _section.scss is about common section styling
+ * remainings are related to sections in page with related name.
+*/
+
+@import './sections/section';
+@import './sections/header';
+@import './sections/hero';
+@import './sections/aboutme';
+@import './sections/project';
+@import './sections/skill';
+@import './sections/experience';
+@import './sections/certification';
+@import './sections/footer';

@@ -1,0 +1,107 @@
+
+.hero {
+  background: $color-dominant;
+  display: flex;
+  align-items: center;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+    @include md {
+      justify-content: center;
+      align-items: center;
+      order: 2;
+      margin-top: 2rem;
+    }    
+  }
+
+  &__title {
+    margin: 0;
+    font-size: 2rem;
+    line-height: 1.2;
+    color: $color-accent;
+
+    @include md {
+      font-size: 1.5rem;
+      text-align: center;
+    }
+
+  }
+
+  &__name {
+    font-size: 3rem;
+    color: $color-complement;
+
+    @include md {
+      font-size: 2.5rem;
+    }
+  }
+
+  &__profession {
+    color: $color-white;
+    font-size: 1.5rem;
+
+    @include md {
+      font-size: 1.2rem;
+      text-align: center;
+      width: 70%;
+    }
+  }
+
+  &__social {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    margin-top: 1rem;
+
+    .social_icon {
+      color: $color-accent;
+      width: 1.5rem;
+    }
+  }
+
+  &__button {
+    margin: 2rem 0;
+
+    @include md {
+      margin-top: 2rem;
+    }
+
+    & .btn {
+      display: inline-block;
+      padding: .75rem 1.5rem;
+      border: 2px solid $color-complement;
+      text-transform: uppercase;
+      color: $color-white;
+      font-weight: 600;
+
+      &:hover {
+        background-color: $color-complement;
+        color: $color-dominant;
+      }
+    }
+  }
+
+  &__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    & img {
+      width: 60%;
+      background-color: hsl(270, 50%, 15%);
+      border: .5em solid hsl(270, 50%, 20%);
+
+      @include md {
+        margin-top: 1rem;
+        width: 30vmin;
+        border-width: .5rem;
+      }
+      @include sm {
+        width: 40vmin;
+      }
+    }
+  }
+}

@@ -1,0 +1,56 @@
+.about_me {
+  background-color: $color-accent;
+  display: flex;
+  align-items: center;
+}
+
+.about_me__carousal {
+  display: flex;
+  overflow: auto;
+
+  &::-webkit-scrollbar {
+    width: 0;
+  }
+}
+
+.carousal__item {
+  min-width: 80%;
+  width: 90%;
+  padding: 2rem;
+  background-color: $color-white;
+  margin-right: 1rem;
+  max-height: 30vmax;
+  overflow: auto;
+  box-shadow: 0 0 15px hsl(0, 0%, 90%);
+  position: relative;
+
+  &::-webkit-scrollbar {
+    width: 0;
+  }
+
+  @include md {
+    max-height: 70vmax;
+  }
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: .5rem;
+    width: 100%;
+    background: linear-gradient(to right, hsl(270, 30%, 30%), hsl(45, 30%, 50%), hsl(90, 30%, 30%));
+  }
+}
+
+.carousal__title {
+  color: $color-dominant;
+  text-transform: capitalize;
+  font-size: 1.5rem;
+}
+
+.carousal__info {
+  color: $color-black;
+  margin: 2rem 0;
+  font-size: 1.2rem;
+}

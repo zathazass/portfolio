@@ -1,0 +1,36 @@
+/*
+ * Global rules
+*/
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  // To remove unexpected behaviour on elements
+  outline: none;
+  border: none;
+}
+
+a {
+  text-decoration: none;
+  
+  // set to parent element specific color
+  color: currentColor; 
+}
+
+ul {
+  list-style: none;
+
+  /* Eventhough set in global rules not sure it works
+   * on listings so added once again here.
+   */   
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
