@@ -1,56 +1,48 @@
 .about_me {
-  background-color: $color-accent;
+  background-color: $color-white;
   display: flex;
   align-items: center;
 }
 
-.about_me__carousal {
-  display: flex;
-  overflow: auto;
 
-  &::-webkit-scrollbar {
-    width: 0;
-  }
-}
-
-.carousal__item {
-  min-width: 80%;
-  width: 90%;
+.about__info {
   padding: 2rem;
+  margin: 2rem auto;
   background-color: $color-white;
-  margin-right: 1rem;
-  max-height: 30vmax;
-  overflow: auto;
-  box-shadow: 0 0 15px hsl(0, 0%, 90%);
-  position: relative;
-
-  &::-webkit-scrollbar {
-    width: 0;
-  }
-
-  @include md {
-    max-height: 70vmax;
-  }
+  box-shadow: 0 0 15px 5px hsl(0, 0%, 95%);
+  border: 1px solid hsl(0, 0%, 90%);
+  border-top: 5px solid $color-dominant;
   
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: .5rem;
+  width: 80%;
+
+  @include sm {
     width: 100%;
-    background: linear-gradient(to right, hsl(270, 30%, 30%), hsl(45, 30%, 50%), hsl(90, 30%, 30%));
   }
 }
 
-.carousal__title {
-  color: $color-dominant;
-  text-transform: capitalize;
+.about__heading {
   font-size: 1.5rem;
+  margin-bottom: 1rem;
 }
 
-.carousal__info {
+.about__paragraph {
   color: $color-black;
-  margin: 2rem 0;
-  font-size: 1.2rem;
+}
+
+.about__icon {
+  display: block;
+  text-align: center;
+  margin: .5rem auto;
+  width: 3rem;
+  height: 3rem;
+}
+
+.tech_icon {
+  background-color: $color-complement_2;
+  mask: url('/src/assets/laptop-code.svg') no-repeat center;
+}
+
+.edu_icon {
+  background-color: $color-complement_2;
+  mask: url('/src/assets/user-graduate.svg') no-repeat center;
 }
